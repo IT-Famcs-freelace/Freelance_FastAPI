@@ -10,6 +10,8 @@ class Urls(Enum):
     resend_verification_code = "/resend_verification_code"
     forgot_password = "/forgot_password"
     reset_password = "/reset_password"
+    ban = "/ban/{id}"
+    
 
     #freelancers
     create_freelancer = "/freelancers/create/{id}"
@@ -25,6 +27,7 @@ class Urls(Enum):
     detail_customer = "/customers/{id}"
 
     #orders
+    list_orders = "/orders/{filter}"
     create_order = "/orders/create/"
     update_order = "/orders/update/{order_id}"
     detail_order = "/orders/{order_id}"
