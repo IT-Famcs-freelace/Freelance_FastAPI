@@ -6,7 +6,7 @@ from sqlalchemy import UUID, Column, String, Text, Numeric
 
 
 class Customer(Base, TimeStampableModel):
-    __tablename__ = "tbl_user"
+    __tablename__ = "tbl_customer"
 
     id = Column(UUID, primary_key=True, nullable=False, unique=True, default=uuid4())
     first_name = Column(String(30), nullable=False, unique=False)
